@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra-Collections</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--nav bars-->
+    <section class="navbar">
+      <!--heading-->
+      <div>
+        <h1>Nostra</h1>
+      </div>
+      <!--desktop-view navigation items-->
+      <div class="navlist">
+        <p><a href="">Home</a></p>
+        <p><a href="">New Arrival</a></p>
+        <p><a href="">Most Wanted</a></p>
+        <p><a href="collections.html">Collections</a></p>
+        <p><a href="">contact Us</a></p>
+      </div>
+      <!--mobile view menu bars-->
+      <div class="mobileview">
+        <i class="fa-solid fa-bars" id="menubar" style="color: #040c1b"></i>
+      </div>
+      <div class="mobile-navlinks" id="menulist">
+        <i class="fa-solid fa-x" id="closenav" style="color: black"></i>
+        <p><a href="">Home</a></p>
+        <p><a href="">New Arrival</a></p>
+        <p><a href="">Most Wanted</a></p>
+        <p><a href="">Collections</a></p>
+        <p><a href="">contact Us</a></p>
+      </div>
+    </section>
+
+    <div class="collections-container">
+      <div class="divide-section">
+        <div class="filters">
+          <h3 class="filters_occassions">Occassion</h3>
+        
+        <input  type="checkbox" name="tags" data-tags="summer" value="summer" /> <label for="summer"> Summer </label>  <br/>
+        <input type="checkbox" name="tags" value="party"  data-tags="partywear" id="" /> <label for="party"> Party </label>   <br />
+        <input type="checkbox" name="tags" value="beach"  data-tags="beach" id="" /> <label for="beach">Beach</label>
+      </div>
+
+      <div class="filters-colors">
+        <h3 class="filters_occassions">Preference</h3>
+        <input type="checkbox" name="tags" value="blue"  data-tags="blue" id="" /><label for="blue">Blue</label>  <br />
+        <input type="checkbox" name="tags" value="red"  data-tags="red" /><label for="red">Red</label>  <br />
+        <input type="checkbox" name="tags" value="White"  data-tags="white" /> <label for="white">White</label> <br />
+        <input type="checkbox" name="tags" value="green"  data-tags="green" /> <label for="green">Green</label>  <br />
+      </div>
+
+      <div class="filters-arrivals">
+        <h3 class="filters_occassions">Fashion</h3>
+        <input type="checkbox" name="tags" value="new" /> <label for="new">New </label>  <br />
+        <input type="checkbox" name="tags" value="old" /> <label for="old">Old</label> <br />
+      </div>
+      <hr class="vertical-line" />
+    </div>
+  </div>
+
+    <div class="product-section">
+      <form class="navbar-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchbar" style="width: 100%; padding: 10px;" type="search" placeholder="search" />
+        
+      </form>
+    </div>
+<div class="products" id="total-products">
+    <div class="products1" data-tags="beach">
+        <img src="beach1.jpg" alt="">
+        <img src="beach2.jpg" alt="">
+        <img src="beach3.jpg" alt="">
+        <img src="beach4.jpg" alt="">
+        
+      
+
+    </div>
+
+    <div class="products2" data-tags="partywear">
+      <img src="partywear1.jpg" alt="">
+      <img src="partywear2.jpg" alt="">
+      <img src="partywear3.jpg" alt="">
+      <img src="partywear4.jpg" alt="">
+        
+        
+       
+    </div>
+    <div class="products3" data-tags="white">
+        <img src="white1.jpg" alt="">
+        <img src="white2.jpg" alt="">
+        <img src="white3.jpg" alt="">
+        <img src="white4.jpg" alt="">
+    </div>
+
+    <div class="products4" data-tags="summer">
+      
+      <img src="summer1.jpg" alt="">
+        <img src="summer2.jpg" alt="">
+        <img src="summer3.jpg" alt="">
+        <img src="summer4.jpg" alt="">
+        
+     
+    </div>
+
+    <div class="products5" data-tags="red">
+      <img  src="red1.jpg" alt="">
+      <img src="red2.jpg" alt="">
+      <img src="red3.jpg" alt="">
+      <img src="red4.jpg" alt="">
+        
+      
+      
+    </div>
+
+    <div class="products6" data-tags="blue">
+      <img src="blue2.jpg" alt="">
+      <img src="blue3.jpg" alt="">
+       
+      <img src="blue4.jpg" alt="">
+      <img src="blue1.jpg" alt="">
+        
+    </div>
+
+    <div class="products7" data-tags="green">
+        <img src="green3.jpg" alt="">
+        <img src="green1.jpg" alt="">
+        <img src="green4.jpg" alt="">
+        <img src="green2.jpg" alt="">
+    </div>
+ 
+    
+    
+  
+  
+  </body>
+
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body, section {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.offer-bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: black;
+  color: wheat;
+  font-size: 2em;
+}
+
+.offer-bar b {
+  font-weight: bolder;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+
+.navlist a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.navlist a:hover {
+  color: #F76400;
+}
+
+.mobileview {
+  display: none;
+}
+
+.mobile-navlinks {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-slider {
+  display: flex;
+
+  transition-duration: 2s;
+  width: 100%;
+}
+
+.image-slider img {
+  height: auto;
+  width: 100%;
+
+}
+
+.arrow1, .arrow2, .text-content {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 2.5em;
+}
+
+.arrow1 {
+  left: 40px;
+}
+
+.arrow2 {
+  right: 40px;
+}
+
+.text-content {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  color: black;
+}
+
+#btn {
+  width: 30%;
+  padding: 20px;
+  font-size: 0.5em;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+
+}
+
+.brands img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: white solid 2px;
+  cursor: pointer;
+  transform: translatey(-5%);
+}
+
+#btn1 {
+  display: none;
+}
+
+.customer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.customer-content2 {
+  margin-left: 20px;
+}
+
+.customer-content p {
+  font-size: 1.2em;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.mob-cust-sup {
+  background-color: grey;
+  display: none;
+  margin-left: 20PX;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.desk-cust-sup {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+
+}
+
+.new-arrivals-img {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 40px;
+
+}
+
+.new-arrival-scroll, .Most-wanted {
+  position: relative;
+  overflow-x: auto;
+}
+
+.new-arrival-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.most-wanted::-webkit-scrollbar {
+  display: none;
+}
+
+.new-arrivals img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: white solid 2px;
+  border-radius: 10px;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  scroll-behavior: smooth;
+}
+
+.most-wanted-img-container img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: white solid 2px;
+  border-radius: 10px;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  scroll-behavior: smooth;}
+
+  
+
+.new-arrivals button {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-left: 10px;
+ 
+  white-space: nowrap;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 
+  0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
+}
+
+.new-arrivals button:hover {
+  cursor: pointer;
+  transform: translatey(5%);
+  background-color: black;
+  color: wheat;
+}
+
+
+.new-arrivals img:hover {
+  cursor: pointer;
+  transform: translatey(-5%);
+}
+
+.most-wanted-images img:hover {
+  cursor: pointer;
+  transform: translatey(-5%);
+}
+
+#most-wanted-scroll {
+  transition: transform 2s ease;
+}
+.most-wanted-img-container {
+  transition: transform 2s ease;
+}
+.new-arrivals img {
+  transition: transform 2s ease; /* Apply smooth transition for both hover and unhover */
+}
+
+.new-arrivals img:hover {
+  transform: scale(1.1); /* Zoom in when hovered */
+}
+#new-img-scroll {
+  transition: transform 2s ease; /* Slower transition duration (1.5 seconds) */
+}
+
+.most-wanted-img-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 40px;
+  
+}
+
+#limited-offer-btn {
+  cursor: pointer;
+}
+
+/* collections page*/
+
+body {
+  width: 100%;
+}
+
+.vertical-line {
+  border: none; /* Remove default border */
+  border-left: 2px solid black; /* Left border will act as the vertical line */
+  height: 310%; /* Adjust height as needed */
+  top: 80px;
+  margin-left: 120%; /* Optional: Space from the left */
+  z-index: 10;
+  position: absolute;
+}
+
+.navbar-search {
+  position: absolute; /* Change from absolute to relative */
+  top: 10%; /* Adjust this value to reduce space */
+  margin-left: 30%;
+  outline: none;
+  display: flex;
+  width: 60%; /* Ensure the width remains controlled */
+}
+.collections-container {
+  position: absolute;
+}
+
+.products {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 5%;
+  align-items: center;
+  
+}
+
+.products img:hover {
+  cursor: pointer;
+  transform: translatey(-5%);
+}
+
+.navbar-search i { 
+ padding: 10px;
+}
+.navbar-search input {
+  border-radius: 30px;
+}
+.products1, .products2, .products3, .products4, .products5, .products6, .products7 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  /* Aligns items to the top */
+  padding: 20px;
+  gap: 10px;
+  /* Reset margin */
+  flex-wrap: wrap; /* Allows wrapping of elements */
+  z-index: 30;
+margin: 0;
+}
+
+.collections-container {
+  display: flex;
+flex-direction: column;
+
+}
+
+.products img {
+  height: 250px;
+  width: 200px;
+  padding: 10px;
+ 
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+ 
+}
+
+.filters, .filters-colors, .filters-arrivals {
+  margin: 30px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.filters {
+  margin-top: 80px;
+}
+
+.filters_occassions {
+  font-size: 2em; 
+}
+.filters_occassions label {
+padding: 20px;
+}
+
+label { 
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+
+
+  .offer-bar {
+    width: 100%;
+
+  }
+
+  .navlist {
+    display: none;
+  }
+
+  .mobileview {
+    display: block;
+    text-align: right;
+    padding: 9px;
+  }
+
+  body, .slider {
+    position: relative;
+  }
+
+  .mobile-navlinks {
+    display: block;
+    position: absolute;
+    margin-right: -90%;
+    overflow: hidden;
+    z-index: 20;
+    padding: 10px;
+    transition: 0.5s;
+    transition-duration: 1s;
+    transform: translateX(100%);
+    /* Full width of the viewport */
+    height: 100%;
+    width: 100%;
+  }
+
+  #closenav {
+    text-align: right;
+  }
+
+  .navbar {
+    /* Full width of the viewport */
+    height: 100%;
+  }
+
+  .mobile-navlinks p {
+    padding: 15px;
+
+    background-color: black;
+    opacity: 75%;
+    color: white;
+    width: 50%;
+  }
+
+  .mobile-navlinks a {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+  }
+
+  .mobile-navlinks a:hover {
+    color: #F76400;
+
+  }
+
+  .text-content {
+    font-size: large;
+    top: 50%;
+  }
+
+  #btn {
+    width: 50%;
+    padding: 5px;
+    font-size: large;
+  }
+
+  .image-slider {
+    top: 30%;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+
+  .brands img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .customer-support-heading {
+    display: none;
+  }
+
+  .desk-cust-sup {
+    display: none;
+  }
+
+  .mob-cust-sup {
+    background-color: grey;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+
+  }
+  .ltd-ofr-img {
+    display: none;
+  }
+
+ #limited-offer-btn {
+  display: none;
+ }
+ .offer-text {
+  text-align: left;
+ }
+
+ .exclusive{
+  display: none;
+ }
+ .vertical-line  {
+  display: none;
+ }
+
+ .collections-container {
+  display: none;
+ }
+
+ .products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  position: absolute;
+  padding: 10px;
+  
+ }
+ .products img {
+  height: 190px;
+  width: 130px;
+  transition: transform 2s ease;
+  cursor: pointer;
+ }
+
+}
